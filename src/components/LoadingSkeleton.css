@@ -1,0 +1,74 @@
+/* Loading Skeleton Styles */
+
+.skeleton-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.skeleton-destination-card {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+}
+
+.skeleton-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.skeleton-h2 { height: 24px; width: 60%; }
+.skeleton-h3 { height: 28px; width: 40%; margin-bottom: 1.25rem; }
+.skeleton-p { height: 16px; width: 100%; }
+.w-70 { width: 70%; }
+.skeleton-btn { height: 42px; width: 100%; margin-top: auto; border-radius: var(--radius-full); }
+
+/* Itinerary Skeleton */
+.skeleton-itinerary-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.skeleton-header-banner {
+  height: 90px;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton-day-box {
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.skeleton-slot {
+  height: 150px;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-box-generic {
+  width: 100%;
+  height: 120px;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 900px) {
+  .skeleton-slots-grid {
+    grid-template-columns: 1fr;
+  }
+}

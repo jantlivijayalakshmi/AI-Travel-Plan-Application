@@ -1,0 +1,62 @@
+/* Chat Page Styles */
+
+.chat-page {
+  padding-top: 7rem;
+}
+
+.chat-page-header {
+  margin-bottom: 2rem;
+}
+
+.dest-selector-bar {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--radius-full);
+}
+
+.selector-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.dest-select-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.dest-select-input option {
+  background: var(--bg-secondary);
+  color: #ffffff;
+}
+
+.chat-container-box {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .dest-selector-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: var(--radius-md);
+  }
+
+  .dest-select-input {
+    width: 100%;
+  }
+}

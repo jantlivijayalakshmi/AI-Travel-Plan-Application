@@ -1,0 +1,195 @@
+/* Planner Page Styles */
+
+.planner-page {
+  padding-top: 7rem;
+}
+
+.planner-header {
+  margin-bottom: 2.5rem;
+}
+
+.planner-form-card {
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.planner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-icon {
+  color: var(--accent-cyan);
+}
+
+.select-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-select, .form-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.25rem;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.form-select option {
+  background: var(--bg-secondary);
+  color: #ffffff;
+}
+
+.form-select:focus, .form-input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.toggle-custom-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.toggle-custom-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Days Slider */
+.days-range-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.days-slider {
+  width: 100%;
+  accent-color: var(--accent-cyan);
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.days-ticks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-tick {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.day-tick:hover, .tick-active {
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.15);
+}
+
+/* Interests Grid */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.interest-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-align: left;
+}
+
+.interest-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.interest-selected {
+  background: rgba(6, 182, 212, 0.15) !important;
+  border-color: rgba(6, 182, 212, 0.4) !important;
+  color: var(--accent-cyan) !important;
+  font-weight: 600;
+}
+
+.text-cyan {
+  color: var(--accent-cyan);
+}
+
+/* Submit */
+.form-submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.generate-submit-btn {
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.error-banner {
+  padding: 2rem;
+  text-align: center;
+  color: var(--accent-rose);
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+@media (max-width: 600px) {
+  .planner-form-card {
+    padding: 1.5rem;
+  }
+
+  .select-row {
+    flex-direction: column;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
